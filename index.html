@@ -49,7 +49,7 @@
 
         <!-- banner  ---------------------------- -->
 
-  <div class="">
+  
 
     <div class="hero  mt-4 min-h-screen "  style="background-image: url(./images/banner.png);">
         <div class="hero-overlay bg-opacity-5"></div>
@@ -65,48 +65,48 @@
 
       
     
-      </div>
-
-
-            <!-- card bar -->
-
-            <div class="flex justify-center relative pb-4  ">
-                <div class="card w-72 bg-base-100 shadow-xl shadow-lime-500 ">
-                    <div class="card-body flex flex-col">
-                       
-                      <h2 class="card-title  flex justify-centers " >  <img src="images/people.png" alt="">500K+ </h2>
-                      <p> <span class="font-normal flex justify-center ">Registered users</span></p>
-                      
-                    </div>
-                  </div>
-                <div class="card w-72 bg-base-100 shadow-xl  shadow-lime-500">
-                    <div class="card-body flex flex-col">
-                       
-                      <h2 class="card-title  flex justify-centers " >  <img src="images/ticket-cupon.png" alt="">1.7 lacks
-                        
-                         </h2>
-                      <p> <span class="font-normal flex justify-center ">Tickets sold</span></p>
-                      
-                    </div>
-                  </div>
-                <div class="card w-72 bg-base-100 shadow-xl  shadow-lime-500">
-                    <div class="card-body flex flex-col">
-                       
-                      <h2 class="card-title  flex justify-centers " >  <img src="images/stoppage.png" alt="">80K+
-                         </h2>
-                      <p> <span class="font-normal flex justify-center ">Rental partners+</span></p>
-                      
-                    </div>
-                  </div>
-    
-    
-                
-    
-    
-              </div>
-
      
   </div>
+
+  <!-- h--bottomm -->
+
+  <div
+  id="h-bottom"
+  class=" hidden lg:flex gap-10 w-8/12 mx-auto font-inter justify-center absolute top-[690px] right-[250px]"
+>
+  <div
+    class="flex gap-2 bg-white rounded-3xl border-b-green-800 border-bottom p-3 items-center justify-center"
+  >
+    <img src="images/people.png" alt="" />
+    <div class="">
+      <p class="text-3xl font-bold">500k+</p>
+      <p>Registered Users</p>
+    </div>
+  </div>
+
+  <div
+    class="flex gap-2 bg-white rounded-3xl border-bottom p-3 items-center justify-center"
+  >
+    <img src="images/ticket-cupon.png" alt="" />
+    <div class="">
+      <p class="text-3xl font-bold">1.7 lacks</p>
+      <p>Ticket sold</p>
+    </div>
+  </div>
+
+  <div
+    class="flex gap-2 bg-white rounded-3xl border-bottom p-3 items-center justify-center"
+  >
+    <img src="images/stoppage.png" alt="" />
+    <div class="">
+      <p class="text-3xl font-bold">80k+</p>
+      <p>Rental Partner</p>
+    </div>
+  </div>
+</div>
+
+
+
     
 
     </header>
@@ -318,7 +318,9 @@
                         <div id="pricelist" class="divide-y divide-dashed  bg-slate-50  p-6   ">
 
                            
-                            <div class=" pl font-bold flex flex-row justify-between w-4/4"><h1 class="seatNumbers">Seat   </h1> <h1  class="seatClass">Class</h1>  <h1  class="seatPrice">Price</h1></div>
+                            <div class=" pl font-bold flex flex-row justify-between w-4/4"><h1 class="seatNumbers">Seat <span id="added-seat" class="rounded-md px-2 bg-[#1DD100]"
+                                >0</span
+                              >   </h1> <h1  class="seatClass">Class</h1>  <h1  class="seatPrice">Price</h1></div>
 
                            
                           </div> 
