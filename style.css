@@ -1,0 +1,5 @@
+/* Define the green-button class */
+.green-button {
+    background-color: green;
+    color: white; /* Text color */
+}

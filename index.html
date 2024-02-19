@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="mx-auto lg:px-20  px-2 my-2  ">
     <!-- header -->
@@ -69,7 +70,7 @@
 
             <!-- card bar -->
 
-            <div class="flex justify-center relative pb-4 ">
+            <div class="flex justify-center relative pb-4  ">
                 <div class="card w-72 bg-base-100 shadow-xl shadow-lime-500 ">
                     <div class="card-body flex flex-col">
                        
@@ -123,7 +124,7 @@
 
         <!-- cuponnnnn--------------------------------------- -->
 
-        <section class=" flex lg:flex-row flex-col justify-center mt-8  gap-8  lg:px-20  px-2 my-2 ">
+        <section id="cupon" class=" flex lg:flex-row flex-col justify-center mt-8  gap-8  lg:px-20  px-2 my-2 ">
 
             <div class="flex text-black divide-y-1 divide-dashed gap-1">
                 <div class="grid w-60 h-40 rounded-3xl  bg-yellow-400 text-primary-content place-content-center "><h1 class="font-bold text-2xl text-black">15% OFF</h1>
@@ -133,7 +134,7 @@
                     
                     </div> 
                     
-                <div class="grid  w-60 h-40 rounded-3xl bg-yellow-400 text-accent-content place-content-center"><h1 class="font-bold text-2xl text-black">NEW15</h1>
+                <div id="NEW15" class="grid  w-60 h-40 rounded-3xl bg-yellow-400 text-accent-content place-content-center"><h1 class="font-bold text-2xl text-black">NEW15</h1>
                     <p class="text-black">Coupon Code</p>
                 
                 </div> 
@@ -149,7 +150,7 @@
                     
                     </div> 
                     
-                <div class="grid  w-60 h-40 rounded-3xl bg-pink-400 text-accent-content place-content-center"><h1 class="font-bold text-2xl text-black">Couple 20</h1>
+                <div id="Couple20" class="grid  w-60 h-40 rounded-3xl bg-pink-400 text-accent-content place-content-center"><h1 class="font-bold text-2xl text-black">Couple 20</h1>
                     <p class="text-black">Coupon Code</p>
                 
                 </div> 
@@ -187,9 +188,6 @@
 
         <section class=" mt-10 justify-center flex flex-col items-center text-center  ">
 
-           
-           
-
 
             <div class="card lg:card-side w-4/5 shadow-xl   divide-x-2 divide-dashed divide-green-500 divi">
 
@@ -206,7 +204,7 @@
                     </p></div>
                     </div>
         
-                    <div><button class="btn text-green-500 bg-green-100 "> <img src="images/seat-green.png" alt=""> 40 Seats left</button></div>
+                    <div><button  class="btn text-green-500 bg-green-100 "> <img src="images/seat-green.png" alt=""> <div id="Seats-left">40</div></button></div>
 
                 </div>
                 <!-- destinationnn -->
@@ -221,8 +219,7 @@
                   </div> 
                 </div>
 
-
-                
+               
 
                 <div class="card-body flex flex-col  justify-center">
                   <h1>  <img src="images/fare.png" alt=""></h1>
@@ -242,17 +239,13 @@
                  <!-- Select Your Seat -->
 
                 <div class="flex flex-col  w-2/4 p-4">
-
-
-               
-
+            
                  <div class="divide-y divide-dashed gap-4   ">
 
                     <div class=" flex flex-row justify-between  w-4/4"><h1 class="font-bold text-lg">Select Your Seat</h1> </div>
                     <div class=" flex flex-row justify-between  w-4/4"><h1 class="flex "><img src="images/seat-gray.png" alt=" Available"> Available</h1>  <h1 class="flex "> <img src="images/seat-green.png" alt=""> Selected</h1></div>
                    
-                    
-                    
+                                      
                   </div> 
 
                   <!-- seat buttonss -->
@@ -260,87 +253,40 @@
                     <button class="btn w-20 "> <img src="images/stee.png" alt=""> </button>
                   </div>
                   <!-- sit listss -->
-                  <div class=" flex mt-6  justify-between  ">
-                    <ul class="list-inside">
-                        <ol class="flex flex-col gap-10">
-                            <li>A</li>
-                            <li>B</li>
-                            <li>C</li>
-                            <li>D</li>
-                            <li>E</li>
-                            <li>F</li>
-                            <li>G</li>
-                            <li>H</li>
-                            <li>I</li>
-                            <li>J</li>
-                        </ol>
-        
-                      </ul>
+                  <div id=" sitsection"  class=" flex mt-6  justify-between  ">
+                   
 
                       <!-- UL2 -->
-                      <ul class="list-inside">
+                      <ul id="sit1" class="list-inside">
                         <ol class="flex flex-col gap-4">
-                            <li> <button class="btn w-20">A1</button></li>
-                            <li> <button class="btn w-20">B1</button></li>
-                            <li> <button class="btn w-20">C1</button></li>
-                            <li> <button class="btn w-20">D1</button></li>
-                            <li> <button class="btn w-20">E1</button></li>
-                            <li> <button class="btn w-20">F1</button></li>
-                            <li> <button class="btn w-20">G1</button></li>
-                            <li> <button class="btn w-20">H1</button></li>
-                            <li> <button class="btn w-20">I1</button></li>
-                            <li> <button class="btn w-20">J1</button></li>
-                          
+                            <li> <button   class="btn w-20">A1</button></li>
+                            <li> <button  class="btn w-20">B1</button></li>
+                           
                             
                         </ol>
                       </ul>
                       <!-- UL3 -->
-                      <ul class="list-inside">
+                      <ul id="sit2" class="list-inside">
                         <ol class="flex flex-col gap-4">
-                            <li> <button class="btn w-20">A2</button></li>
-                            <li> <button class="btn w-20">B2</button></li>
-                            <li> <button class="btn w-20">C2</button></li>
-                            <li> <button class="btn w-20">D2</button></li>
-                            <li> <button class="btn w-20">E2</button></li>
-                            <li> <button class="btn w-20">F2</button></li>
-                            <li> <button class="btn w-20">G2</button></li>
-                            <li> <button class="btn w-20">H2</button></li>
-                            <li> <button class="btn w-20">I2</button></li>
-                            <li> <button class="btn w-20">J2</button></li>
+                            <li> <button  class="b btn w-20">A2</button></li>
+                            <li> <button  class="b btn w-20">B2</button></li>
                           
-                            
                         </ol>
                       </ul>
                       <!-- UL4 -->
-                      <ul class="list-inside">
+                      <ul id="sit3" class="list-inside">
                         <ol class="flex flex-col gap-4">
-                            <li> <button class="btn w-20">A3</button></li>
-                            <li> <button class="btn w-20">B3</button></li>
-                            <li> <button class="btn w-20">C3</button></li>
-                            <li> <button class="btn w-20">D3</button></li>
-                            <li> <button class="btn w-20">E3</button></li>
-                            <li> <button class="btn w-20">F3</button></li>
-                            <li> <button class="btn w-20">G3</button></li>
-                            <li> <button class="btn w-20">H3</button></li>
-                            <li> <button class="btn w-20">I3</button></li>
-                            <li> <button class="btn w-20">J3</button></li>
-                          
+                            <li> <button  class="b btn w-20">A3</button></li>
+                            <li> <button  class="b btn w-20">B3</button></li>
+                           
                             
                         </ol>
                       </ul>
                       <!-- UL5 -->
-                      <ul class="list-inside">
+                      <ul id="sit4" class="list-inside">
                         <ol class="flex flex-col gap-4">
-                            <li> <button class="btn w-20">A4</button></li>
-                            <li> <button class="btn w-20">B4</button></li>
-                            <li> <button class="btn w-20">C4</button></li>
-                            <li> <button class="btn w-20">D4</button></li>
-                            <li> <button class="btn w-20">E4</button></li>
-                            <li> <button class="btn w-20">F4</button></li>
-                            <li> <button class="btn w-20">G4</button></li>
-                            <li> <button class="btn w-20">H4</button></li>
-                            <li> <button class="btn w-20">I4</button></li>
-                            <li> <button class="btn w-20">J4</button></li>
+                            <li> <button  class="  b btn w-20">A4</button></li>
+                            <li> <button  class="  b btn w-20">B4</button></li>
                           
                             
                         </ol>
@@ -352,12 +298,7 @@
                     
                   </div>
 
-
                 </div>
-
-
-
-
 
 
                <!-- second sectionnn//////////////////////////////////////////////////////////////////  -->
@@ -371,67 +312,67 @@
                         <div class=" flex flex-row justify-between  w-4/4"></div> 
                     </div> 
 
+                    <!-- sid add sectionnn  -->
+
                     
-                        <div class="divide-y divide-dashed  bg-slate-50  p-6   ">
+                        <div id="pricelist" class="divide-y divide-dashed  bg-slate-50  p-6   ">
 
-                            <div class=" font-bold flex flex-row justify-between w-4/4"><h1>Seat   </h1> <h1>Class</h1>  <h1>Price</h1></div>
-                            <div class=" flex flex-row justify-between w-4/4"><h1>C2     </h1> <h1>Economoy</h1>  <h1>0</h1></div>
-                            <div class=" flex flex-row justify-between w-4/4"><h1>C3    </h1> <h1>Economoy</h1>  <h1>0</h1></div>
-                            <div class=" flex flex-row justify-between w-4/4  "> <h1>Total</h1>  <h1>BDT 0 </h1>   </div>
+                           
+                            <div class=" pl font-bold flex flex-row justify-between w-4/4"><h1 class="seatNumbers">Seat   </h1> <h1  class="seatClass">Class</h1>  <h1  class="seatPrice">Price</h1></div>
 
-                            <div class=" pt-4 pb-4"><input class="w-3/4 h-10"   type="text" name="" placeholder="Have any copupon?" id=""> 
-                              <button class="btn btn-success " >Apply</button>
+                           
+                          </div> 
+                    <!-- price sectionnn  -->
+
+
+
+
+                        <div id="pricelist" class="divide-y divide-dashed  bg-slate-50  p-6   ">
+
+                            <div class=" flex flex-row justify-between w-4/4  "> <h1 class="">Total</h1>  <h1 > <span class="tp"> </span> BDT  </h1>   </div>
+                           
+
+                           
+                            <div class="pt-4 pb-4  " id="cupondiv">
+                                <input id="inputCuponCode" class="w-3/4 h-10" type="text" name="" placeholder="Have any coupon?">
+                                <button id="Applycupon" class="btn btn-success">Apply</button>
                             </div>
-                            <div class=" flex flex-row justify-between w-4/4  pt-4 "> <h1> Grand Total</h1>  <h1>BDT 0 </h1>   </div>
-
                             
+                            <div id="" class=" flex flex-row justify-between w-4/4  pt-4 "> <h1> Grand Total </h1> <h1 > <span class="grandTotal"> </span> BDT  </h1> </div>
 
+                            <a href="/next/next.html">
+                                <button class="  mt-4 btn btn-wide w-72 lg:w-96 bg-green-600">Next</button>
+                              </a>
 
+                           
 
                           </div> 
 
 
-                          <div>
-                            <h1 class="text-bolt">Passenger Name*</h1>
-                             <label class="input input-bordered flex items-center gap-2">
-                                  <input type="text" class="grow" placeholder="Enter your name" />
-                            </label>
-                            <h1 class="text-bolt">Phone number*</h1>
-                              <label class="input input-bordered flex items-center gap-2">
-                                <input type="text" class="grow" placeholder="Enter your phone number" />
-                            </label>
-                            <h1 class="text-bolt">Email ID</h1>
-                              <label class="input input-bordered flex items-center gap-2">
-                                <input type="text" class="grow" placeholder= " Enter your Email" />
-                              </label>
-
-                              <button class=" mt-4 btn btn-wide w-72 lg:w-96 bg-green-600">Next</button>
+                         
                               
                               
-                              <div class=" flex flex-row justify-between w-4/4  pt-4 "> <h1> Terms and Conditions </h1>  <h1>Cancellation Policy </h1>   </div>
+                              
                            
 
-
-
-                          </div>
-
-                    
+                               
 
                   <!-- end second sittt -->
                 </div>
 
-
-
-
               </div>
-
-
-
 
         </section>
 
 
+
+
+
+
     </main>
+
+
+
 
 
     <!-- footer -->
@@ -458,5 +399,14 @@
         </div>
         </nav>
       </footer>
+
+
+
+
+<!-- scriptsssssss -->
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
